@@ -1,6 +1,9 @@
 <script>
+import { page } from '$app/stores';
+
 const url = window.location.pathname;
-const dernierMot = url.split("/").pop();
+const dernierMot = $page.params.pokemonName
+// const dernierMot = url.split("/").pop();
 
 import { onMount } from 'svelte';
 
@@ -18,7 +21,21 @@ onMount(async () => {
     }
 });
 </script>
-<h1>{pokemonData ? pokemonData.name : "Loading..."}</h1>
+
+<section>
+<h1>{pokemonData ? pokemonData.name : "Introuvable"}</h1>
 {#if pokemonData}
     <img src={pokemonData.sprites.front_default} alt={pokemonData.name} />
+    <p>{pokemonData.types[0].type.name}</p>
+    <p>
+    {#each pokemonData.abilities as ability}
+        <li>{ability.ability.name}</li>
+    {/each}
+    </p>
+    <p>
+        {#each pokemonData.stats as stat}
+            <li>{stat.stat.name}</li>
+        {/each}
+        </p>
 {/if}
+</section>

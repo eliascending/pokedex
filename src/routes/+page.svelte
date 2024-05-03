@@ -14,14 +14,17 @@
         const parts = url.split('/');
         return parts[parts.length - 2];
     }
+    let inputValue = '';
 </script>
 
 <section>
     <div>
         <form>
-            <input placeholder="nom du pokemon"/>
+            <input id="pokemonInput" placeholder="nom du pokemon" bind:value={inputValue}/>
             <button>
-                Rechercher
+                <a href={`/pokemons/${inputValue}`}>
+                    Rechercher
+                </a>
             </button>
         </form>
     </div>
