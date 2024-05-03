@@ -5,10 +5,14 @@
     <nav>
         <ul>
             <li>
-                Pokepupuce
+                <a href="">
+                    Pokepupuce
+                </a>
             </li>
             <li>
-                Trouve ta pupuce.net
+                <a href="">
+                    Trouve ta pupuce.net
+                </a>
             </li>
         </ul>
     </nav>
@@ -20,6 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ebebeb;
 }
 nav {
     width: 80%;
@@ -33,5 +38,8 @@ ul {
 }
 ul li {
     list-style: none;
+}
+ul li a {
+    text-decoration: none;
 }
 </style>
