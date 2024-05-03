@@ -34,8 +34,8 @@ onMount(async () => {
     </p>
     <p>
         {#each pokemonData.stats as stat}
-            <li>{stat.stat.name}</li>
+            <li>{stat.stat.name} {stat.base_stat}</li>
         {/each}
-        </p>
+    </p>
 {/if}
 </section>
