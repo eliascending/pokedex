@@ -10,7 +10,6 @@
         imageUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getIdFromUrl(pokemon.url)}.png`
         }));
     });
-
     function getIdFromUrl(url) {
         const parts = url.split('/');
         return parts[parts.length - 2];
@@ -30,8 +29,10 @@
         <ul>
             {#each pokemons as pokemon}
                 <li>
-                    <img src={pokemon.imageUrl} alt={pokemon.name} />
-                    <span>{pokemon.name}</span>
+                    <a href={`/pokemons/${pokemon.name}`}>
+                        <img src={pokemon.imageUrl} alt={pokemon.name} />
+                        <span>{pokemon.name}</span>
+                    </a>
                 </li>
             {/each}
         </ul>

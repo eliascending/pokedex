@@ -5,12 +5,12 @@
     <nav>
         <ul>
             <li>
-                <a href="">
+                <a href="/">
                     Pokepupuce
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/trouvetapupuce">
                     Trouve ta pupuce.net
                 </a>
             </li>
