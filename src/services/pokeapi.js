@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2';
+const POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2/pokemon';
 
-export const getPokemon = async (pokemonName) => {
+export const getPokemons = async (pokemonName) => {
     try {
         const response = await axios.get(`${POKEAPI_BASE_URL}/pokemon/${pokemonName}`);
         return response.data;
