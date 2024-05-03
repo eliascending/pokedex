@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<section>
+    <div>
+        <form>
+            <input placeholder="nom du pokemon"/>
+            <button>
+                Rechercher
+            </button>
+        </form>
+    </div>
+</section>
