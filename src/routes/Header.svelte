@@ -20,7 +20,7 @@
 <style>
 header {
     width: 100vw;
-    height: 5vh;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +29,12 @@ header {
 nav {
     width: 80%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 ul {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,6 +44,11 @@ ul li {
     list-style: none;
 }
 ul li a {
+    font-weight: 700;
+    color: black;
     text-decoration: none;
+}
+ul li a:hover {
+    cursor: pointer;
 }
 </style>
